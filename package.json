@@ -1,0 +1,11 @@
+{
+  "name": "api-rest-php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "php -S localhost:8000 router.php"
+  },
+  "author": "gonpineiro",
+  "license": "MIT"
+}
