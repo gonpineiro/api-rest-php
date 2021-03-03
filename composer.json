@@ -1,0 +1,11 @@
+{
+    "name": "gonzalo/api-rest-php",
+    "license": "MIT",
+    "description": "API REST con PHP",
+    "authors": [
+        {
+            "name": "Gonzalo",
+            "email": "gon.pineiro@gmail.com"
+        }
+    ]
+}
