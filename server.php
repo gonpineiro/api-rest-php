@@ -1,4 +1,16 @@
 <?php
+    /* Haders */
+    include('header.php');
+
+    /*Autenticacion via HTTP */
+    // include('auth/http.php');
+
+    /* Autenticacion via HMAC */
+    // include('auth/hmac.php');
+
+    /* Autenticacion via Token */
+    // include('auth/token.php');
+
     /* Definimos los recursos disponibles */
     $allowedResourceTypes = [
         'books',
@@ -33,9 +45,6 @@
         ],
     ];
     
-    /* Le avisamos al cliente que le enviamos un Json */
-    header('Content-Type: application/json');
-
     /* Levantamos el ID del recurso buscado */
     $resourceId = array_key_exists('resource_id', $_GET) ? $_GET['resource_id'] : '';
 

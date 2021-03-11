@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "php -S localhost:8000 router.php"
+    "serve": "php -S localhost:8000 router.php",
+    "get:books": "curl localhost:8000/books",
+    "auth:http": "curl http://user:pass@localhost:8000/books",
+    "auth:hmac:hash": "php auth/hmac-hash.php",
+    "auth:serve:token": "php -S localhost:8001 auth/auth-serve.php"
   },
   "author": "gonpineiro",
   "license": "MIT"
